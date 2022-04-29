@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
 
-/* General Styling */
 .site-title {
 	font-size: 7.25vw;
 	line-break: break-word;
@@ -41,6 +40,9 @@ footer .site-info {
 	display: none;
 }
 
+figcaption {
+/* 	text-align: center; */
+}
 #comments {
 	display: none;
 }
@@ -57,21 +59,37 @@ footer .site-info {
 	font-size: 1.3rem;
 }
 
-/* Deals with how large certain pages are */
-/* post-53 is currently the main page, this takes up the entire screen */
 .entry-wrapper {
 	width: 75% !important;
 }
+.entry-meta {
+	display: none;
+}
+.entry-title {
+	width: 75% !important;
+}
+.entry-footer {
+	display: none;
+}
+a
 #post-53 .entry-wrapper {
 	width: 95% !important;
 }
 
-/* Deals with images on the entire website */
+/* Deals with all images */
 img {
+		box-shadow: 2px 2px 4px rgb(22, 22, 22);
+}
+/* Deals with posts on the home page */
+#post-53 img {
 	display: block !important;
 	margin: auto !important;
-	box-shadow: 2px 2px 4px rgb(22, 22, 22);
 }
-figcaption {
+#post-53 figcaption {
+	text-align: center;
+}
+/* Deals with posts on the students page */
+#post-296 .wp-block-latest-posts li {
+	width: calc(33.33333% - 0.83333em) !important;
 	text-align: center;
 }
