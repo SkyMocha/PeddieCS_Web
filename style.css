@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+
+/* General Styling */
+.site-title {
+	font-size: 7.25vw;
+	line-break: break-word;
+}
+h1, h2, h3, h4, h5, a {
+	font-family: 'Roboto Slab', serif;
+	color: #c59a30 !important;
+}
+h2 {
+	font-size: 2.125rem;
+}
+h4 {
+	font-size: 1.5rem;
+}
+p {
+	font-size: 1.35rem;
+}
+p a {
+	font-size: 1.25rem;
+}
+header li {
+	font-size: 1rem;
+}
+.single .entry-meta::before {
+	color: white;
+	background-color: white;
+}
+
+.site-title::after, .site-footer::before {
+	background-color: #ecf5fc;
+}
+
+main nav {
+	display: none;
+}
+
+footer .site-info {
+	display: none;
+}
+
+#comments {
+	display: none;
+}
+.entry-content ul {
+	margin-top: -1em;
+	margin-bottom: 1em;
+}
+.entry-content ul li a {
+	font-size: 1.425rem;
+	font-style: initial;
+}
+.entry-content ul li {
+	font-style: italic;
+	font-size: 1.3rem;
+}
+
+/* Deals with how large certain pages are */
+/* post-53 is currently the main page, this takes up the entire screen */
+.entry-wrapper {
+	width: 75% !important;
+}
+#post-53 .entry-wrapper {
+	width: 95% !important;
+}
+
+/* Deals with images on the entire website */
+img {
+	display: block !important;
+	margin: auto !important;
+	box-shadow: 2px 2px 4px rgb(22, 22, 22);
+}
+figcaption {
+	text-align: center;
+}
